@@ -15,7 +15,7 @@ import java.util.List;
 public class CategoryController {
 
     private final CategoryService categoryService;
-
+// Docker workflow test
     @PostMapping("/create")
     public ResponseEntity<CategoryResponseDto> createCategory(
             @RequestBody CreateCategoryDto request) {
