@@ -3,9 +3,10 @@ spring:
     name: fsm
 
   datasource:
-    url: jdbc:postgresql://host.docker.internal:5432/fsm_db
-    username: postgres
-    password: root
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
