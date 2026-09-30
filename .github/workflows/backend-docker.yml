@@ -1,7 +1,6 @@
-
 name: Backend Docker Build
 
-on:
+"on":
   push:
     branches:
       - amrutha
