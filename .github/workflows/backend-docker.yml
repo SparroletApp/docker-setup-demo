@@ -1,1 +1,25 @@
 
+name: Backend Docker Build
+
+on:
+  push:
+    branches:
+      - amrutha
+    paths:
+      - "fsm-backend/fsm/**"
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: |
+          docker build -t fsm-backend:latest ./fsm-backend/fsm
+
+      - name: Verify Docker image
+        run: |
+          docker images fsm-backend
