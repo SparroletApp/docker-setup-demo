@@ -1,0 +1,696 @@
+.admin-ticket-table-wrapper {
+    width: 100%;
+    border: 1px solid #e7e9f2;
+    border-radius: 16px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.admin-ticket-table-scroll {
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.admin-ticket-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.admin-ticket-action-button {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    background: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.admin-ticket-action-button:hover {
+    transform: translateY(-1px);
+}
+
+.admin-ticket-action-button:active {
+    transform: translateY(0);
+}
+
+.admin-ticket-action-view {
+    color: #421DDB;
+}
+
+.admin-ticket-action-view:hover {
+    background: #f1edff;
+    border-color: #421DDB;
+}
+
+
+.admin-ticket-action-edit {
+    color: #2563eb;
+}
+
+.admin-ticket-action-edit:hover {
+    background: #eff6ff;
+    border-color: #2563eb;
+}
+
+.admin-ticket-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(15, 23, 42, 0.48);
+}
+
+.admin-ticket-modal {
+    width: 100%;
+    max-width: 620px;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.2);
+}
+
+.admin-ticket-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 24px 26px 20px;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.admin-ticket-modal-header h2 {
+    margin: 0;
+    color: #171827;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.admin-ticket-modal-header p {
+    margin: 6px 0 0;
+    color: #7b8191;
+    font-size: 13px;
+}
+
+.admin-ticket-modal-close {
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 9px;
+    background: #f5f6fa;
+    color: #687083;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.admin-ticket-modal-close:hover {
+    background: #eceef4;
+    color: #252938;
+}
+
+.admin-ticket-modal-body {
+    padding: 24px 26px;
+}
+
+.admin-ticket-edit-ticket-id {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-ticket-edit-ticket-id span {
+    color: #777e8f;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.admin-ticket-edit-ticket-id strong {
+    color: #421ddb;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.admin-ticket-form-group {
+    margin-bottom: 20px;
+}
+
+.admin-ticket-form-group:last-child {
+    margin-bottom: 0;
+}
+
+.admin-ticket-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #282c38;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.admin-ticket-form-group select,
+.admin-ticket-form-group textarea {
+    width: 100%;
+    border: 1px solid #dfe2ea;
+    border-radius: 9px;
+    outline: none;
+    background: #ffffff;
+    color: #272b38;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.admin-ticket-form-group select {
+    height: 44px;
+    padding: 0 13px;
+}
+
+.admin-ticket-form-group textarea {
+    min-height: 120px;
+    padding: 12px 13px;
+    resize: vertical;
+}
+
+.admin-ticket-form-group select:focus,
+.admin-ticket-form-group textarea:focus {
+    border-color: #421ddb;
+    box-shadow: 0 0 0 3px rgba(66, 29, 219, 0.08);
+}
+
+.admin-ticket-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 18px 26px 22px;
+    border-top: 1px solid #edf0f5;
+}
+
+.admin-ticket-modal-cancel,
+.admin-ticket-modal-save {
+    min-height: 42px;
+    padding: 0 18px;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.admin-ticket-modal-cancel {
+    border: 1px solid #dfe2ea;
+    background: #ffffff;
+    color: #596071;
+}
+
+.admin-ticket-modal-cancel:hover {
+    background: #f6f7fa;
+}
+
+.admin-ticket-modal-save {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border: 1px solid #421ddb;
+    background: #421ddb;
+    color: #ffffff;
+}
+
+.admin-ticket-modal-save:hover {
+    background: #3515ba;
+}
+
+.admin-ticket-modal-cancel:disabled,
+.admin-ticket-modal-save:disabled,
+.admin-ticket-modal-close:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.admin-ticket-button-spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: adminTicketButtonSpin 0.7s linear infinite;
+}
+
+.admin-ticket-modal-header h2 {
+    display: flex;
+    gap: 20px;
+}
+
+@keyframes adminTicketButtonSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.admin-ticket-action-delete {
+    color: #dc2626;
+}
+
+.admin-ticket-action-delete:hover {
+    background: #fef2f2;
+    border-color: #dc2626;
+}
+
+.admin-ticket-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #E5EEFF;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.admin-ticket-table thead {
+    background: #F8F9FF;
+    border: 1px solid #E5EEFF;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.admin-ticket-table th {
+    height: 60px;
+    padding: 0 16px;
+    border-bottom: 1px solid #e8eaf2;
+    color: #787587;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.admin-ticket-table tbody {
+    background-color: white;
+}
+
+.admin-ticket-table tbody tr {
+    height: 71px;
+    transition: background 0.15s ease;
+}
+
+.admin-ticket-table tbody tr td {
+    border-top: 1px solid #E5EEFF;
+    border-bottom: 1px solid #E5EEFF;
+}
+
+.admin-ticket-table tbody tr td:first-child {
+    border-left: 1px solid #E5EEFF;
+}
+
+.admin-ticket-table tbody tr td:last-child {
+    border-right: 1px solid #E5EEFF;
+}
+
+.admin-ticket-table tbody tr:hover {
+    background: #fcfcff;
+}
+
+.admin-ticket-table td {
+    padding: 15px 16px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.admin-ticket-id {
+    color: #421DDB;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.admin-ticket-customer {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+
+.admin-ticket-customer-name {
+    color: #0B1C30;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.admin-ticket-location {
+    max-width: 145px;
+    color: #787587;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
+.right-header-dashboard button i {
+    font-weight: 900;
+    -webkit-text-stroke: 1px currentColor;
+}
+
+.right-header-dashboard button {
+    background-color: #421DDB;
+    color: white;
+    font-size: 15px;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 8px 15px;
+}
+
+
+.dashboard-header {
+    background-color: white;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-ticket-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    max-width: 115px;
+    min-height: 21px;
+    padding: 0 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.admin-ticket-category i {
+    flex-shrink: 0;
+    font-size: 9px;
+}
+
+.admin-ticket-category-hvac {
+    color: #ee5a62;
+    background: #fff4f4;
+    border-color: #ffd3d5;
+}
+
+.admin-ticket-category-electrical {
+    color: #b97900;
+    background: #fffaf0;
+    border-color: #ffe2a1;
+}
+
+.admin-ticket-category-plumbing {
+    color: #3973dc;
+    background: #f1f6ff;
+    border-color: #c7dcff;
+}
+
+.admin-ticket-category-network {
+    color: #9148d7;
+    background: #faf4ff;
+    border-color: #e5ccff;
+}
+
+.admin-ticket-priority {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 21px;
+    padding: 0 8px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.admin-ticket-priority-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.admin-ticket-priority-urgent {
+    color: #e54e55;
+    background: #ffe7e8;
+}
+
+.admin-ticket-priority-urgent .admin-ticket-priority-dot {
+    background: #e54e55;
+}
+
+.admin-ticket-priority-high {
+    color: #b87900;
+    background: #fff1ca;
+}
+
+.admin-ticket-priority-high .admin-ticket-priority-dot {
+    background: #e2a100;
+}
+
+.admin-ticket-priority-medium {
+    color: #3269c9;
+    background: #dce9ff;
+}
+
+.admin-ticket-priority-medium .admin-ticket-priority-dot {
+    background: #3269c9;
+}
+
+.admin-ticket-priority-low {
+    color: #62718b;
+    background: #e0e7f2;
+}
+
+.admin-ticket-priority-low .admin-ticket-priority-dot {
+    background: #75839a;
+}
+
+.admin-ticket-time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #474556;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 13px;
+}
+
+.admin-ticket-time i {
+    color: #474556;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.admin-ticket-technician {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-ticket-technician-image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.admin-ticket-technician-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+}
+
+.admin-ticket-technician-name {
+    color: #25283b;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 12px;
+    white-space: nowrap;
+}
+
+.admin-ticket-technician-status {
+    font-size: 12px;
+    line-height: 11px;
+    font-weight: 500;
+}
+
+.admin-ticket-status-onsite {
+    color: #16a06a;
+}
+
+.admin-ticket-status-enroute {
+    color: #4c2ee8;
+}
+
+.admin-ticket-status-assigned {
+    color: #707488;
+}
+
+.admin-ticket-status-standby {
+    color: #15976a;
+}
+
+.admin-ticket-status-dispatched {
+    color: #7c52ce;
+}
+
+.admin-ticket-details-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border: 1px solid #421DDB;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #421DDB;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.admin-ticket-details-button i {
+    font-size: 15px;
+}
+
+.admin-ticket-details-button:hover {
+    background: #f7f4ff;
+    border-color: #ad9aff;
+}
+
+.admin-ticket-table-footer {
+    min-height: 50px;
+    padding: 0 16px;
+    border-top: 1px solid #e8eaf2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.admin-ticket-showing {
+    color: #5e6275;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.admin-ticket-pagination {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.admin-ticket-page-button {
+    min-width: 25px;
+    height: 25px;
+    padding: 0 7px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background: transparent;
+    color: #34374b;
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.admin-ticket-page-button:hover:not(:disabled) {
+    background: #f4f1ff;
+    color: #5132dc;
+}
+
+.admin-ticket-page-active {
+    background: #4b20dc;
+    color: #ffffff;
+}
+
+.admin-ticket-page-active:hover {
+    background: #4b20dc !important;
+    color: #ffffff !important;
+}
+
+.admin-ticket-page-disabled {
+    color: #c8cad3;
+    border-color: #f0f0f4;
+    background: #ffffff;
+    cursor: not-allowed;
+}
+
+.admin-ticket-page-dots {
+    padding: 0 4px;
+    color: #777a8b;
+    font-size: 10px;
+}
+
+.admin-ticket-technician img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 600px) {
+    .admin-ticket-modal-overlay {
+        padding: 14px;
+    }
+
+    .admin-ticket-modal-header,
+    .admin-ticket-modal-body,
+    .admin-ticket-modal-footer {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .admin-ticket-modal-footer {
+        flex-direction: column-reverse;
+    }
+
+    .admin-ticket-modal-cancel,
+    .admin-ticket-modal-save {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .admin-ticket-table-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .admin-ticket-pagination {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,367 @@
+.edit-part-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: rgba(15, 23, 42, 0.45);
+}
+
+.edit-part-drawer {
+    width: 720px;
+    max-width: 100%;
+    max-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.25);
+    overflow: hidden;
+}
+
+.edit-part-header {
+    position: relative;
+    flex-shrink: 0;
+    padding: 15px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #ffffff;
+    border-bottom: 1px solid #e4e8f1;
+}
+
+.edit-part-header-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.edit-part-header-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee9ff;
+    color: #5235e8;
+    font-size: 24px;
+}
+
+.edit-part-header-text {
+    padding-top: 0;
+}
+
+.edit-part-header-text h2 {
+    margin: 0 0 4px;
+    color: #132238;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+}
+
+.edit-part-header-text p {
+    margin: 0;
+    color: #73778a;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+.edit-part-close {
+    width: 32px;
+    height: 32px;
+    margin-top: -4px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #74798b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 19px;
+    border-radius: 6px;
+}
+
+.edit-part-close:hover {
+    background: #f3f4f8;
+    color: #20283a;
+}
+
+.edit-part-form {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 22px 30px 25px;
+    background: #ffffff;
+}
+
+.edit-part-form::-webkit-scrollbar {
+    width: 6px;
+}
+
+.edit-part-form::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+.edit-part-form::-webkit-scrollbar-thumb {
+    background: #d5d8e2;
+    border-radius: 10px;
+}
+
+.edit-part-section {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.edit-part-section:last-child {
+    margin-bottom: 0;
+}
+
+.edit-part-section-header {
+    min-height: 43px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e5ed;
+}
+
+.edit-part-section-header h3 {
+    margin: 0;
+    color: #4730d5;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 800;
+    letter-spacing: 0.35px;
+}
+
+.edit-part-section-header span {
+    color: #777b8c;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+}
+
+.edit-part-field {
+    min-width: 0;
+}
+
+.edit-part-field-full {
+    margin-bottom: 16px;
+}
+
+.edit-part-field label {
+    display: block;
+    margin: 0 0 7px;
+    color: #15243a;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.edit-part-field label b {
+    color: #df3131;
+    font-weight: 700;
+}
+
+.edit-part-field input,
+.edit-part-field select {
+    width: 100%;
+    height: 39px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    outline: none;
+    padding: 0 13px;
+    background: #eef3ff;
+    color: #172942;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    transition: 0.18s ease;
+}
+
+.edit-part-field input:focus,
+.edit-part-field select:focus {
+    border-color: #7661e8;
+    background: #f2f5ff;
+    box-shadow: 0 0 0 2px rgba(82, 53, 232, 0.08);
+}
+
+.edit-part-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.edit-part-grid:last-child {
+    margin-bottom: 0;
+}
+
+.edit-part-select-wrapper {
+    position: relative;
+}
+
+.edit-part-select-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 38px;
+    cursor: pointer;
+}
+
+.edit-part-select-wrapper i {
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+    color: #6e7588;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.edit-part-alert-input {
+    position: relative;
+}
+
+.edit-part-alert-input input {
+    padding-right: 78px;
+}
+
+.edit-part-alert-input span {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #d7771c;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 700;
+}
+
+.edit-part-price-input {
+    position: relative;
+}
+
+.edit-part-price-input span {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+    color: #626a7d;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.edit-part-price-input input {
+    padding-left: 28px;
+}
+
+.edit-dep-input {
+    width: 100%;
+}
+
+.edit-part-footer {
+    flex-shrink: 0;
+    min-height: 68px;
+    box-sizing: border-box;
+    padding: 14px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    background: #ffffff;
+    border-top: 1px solid #e4e7ef;
+}
+
+.edit-part-cancel,
+.edit-part-submit {
+    height: 38px;
+    padding: 0 18px;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.18s ease;
+}
+
+.edit-part-cancel {
+    border: 1px solid #d9dce5;
+    background: #ffffff;
+    color: #535a6b;
+}
+
+.edit-part-cancel:hover {
+    background: #f7f8fb;
+}
+
+.edit-part-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border: 1px solid #5135e5;
+    background: #5235e8;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(82, 53, 232, 0.18);
+}
+
+.edit-part-submit:hover {
+    background: #462bd2;
+}
+
+@media (max-width: 760px) {
+
+    .edit-part-overlay {
+        padding: 15px;
+    }
+
+    .edit-part-drawer {
+        width: 100%;
+        max-height: calc(100vh - 30px);
+        border-radius: 10px;
+    }
+
+    .edit-part-header {
+        min-height: 125px;
+        padding: 20px;
+    }
+
+    .edit-part-form {
+        padding: 18px 20px 20px;
+    }
+
+    .edit-part-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .edit-part-section-header {
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 0;
+    }
+
+    .edit-part-section-header h3 {
+        font-size: 11px;
+    }
+
+    .edit-part-section-header span {
+        font-size: 9px;
+        text-align: right;
+    }
+
+    .edit-part-footer {
+        padding: 12px 20px;
+    }
+}

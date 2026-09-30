@@ -1,0 +1,535 @@
+
+.edit-customer-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(15, 18, 30, 0.48);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
+    animation: editCustomerOverlayIn 0.18s ease-out;
+}
+
+.edit-customer {
+    width: 100%;
+    max-width: 680px;
+    max-height: calc(100vh - 40px);
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 24px 70px rgba(0, 0, 0, 0.18),
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    animation: editCustomerPopupIn 0.22s ease-out;
+}
+
+
+
+.edit-customer-top {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 17px 24px;
+
+    background: #ffffff;
+    border-bottom: 1px solid #eceef3;
+
+    flex-shrink: 0;
+}
+
+.edit-customer-field-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-width: 0;
+}
+
+.edit-customer-icon-box {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #f1edff;
+    color: #421ddb;
+
+    font-size: 18px;
+}
+
+.edit-title-customer {
+    min-width: 0;
+}
+
+.edit-title-customer h3 {
+    margin: 0;
+
+    color: #252631;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+.edit-title-customer span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #858894;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+.edit-customer-close {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    padding: 0;
+
+    border: 1px solid #e2e4eb;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #6d707d;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.edit-customer-close:hover {
+    background: #f7f7fa;
+    border-color: #d4d6df;
+    color: #252631;
+}
+
+.edit-customer-close i {
+    font-size: 13px;
+}
+
+
+
+.edit-customer-body {
+    min-height: 0;
+
+    overflow-y: auto;
+
+    padding: 0 24px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #d4d6df transparent;
+}
+
+.edit-customer-body::-webkit-scrollbar {
+    width: 5px;
+}
+
+.edit-customer-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.edit-customer-body::-webkit-scrollbar-thumb {
+    background: #d5d7df;
+    border-radius: 10px;
+}
+
+
+
+.edit-customer-head {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 20px 0 14px;
+
+    border-bottom: 1px solid #eceef3;
+}
+
+.edit-customer-head > span {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: #f1edff;
+    color: #421ddb;
+
+    font-size: 14px;
+}
+
+.edit-customer-head h3 {
+    margin: 0;
+
+    color: #353743;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+.edit-customer-head p {
+    margin: 2px 0 0;
+
+    color: #9497a3;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+
+.edit-customer-forms-settings {
+    padding: 20px 0 6px;
+}
+
+.edit-customer-input-label {
+    margin-bottom: 18px;
+}
+
+.edit-customer-label-form {
+    margin-bottom: 7px;
+
+    color: #353743;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+.edit-customer-form-input {
+    width: 100%;
+    height: 42px;
+
+    box-sizing: border-box;
+
+    padding: 0 12px;
+
+    border: 1px solid #dfe2ea;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #ffffff;
+    color: #30323d;
+
+    font-family: inherit;
+    font-size: 13px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.edit-customer-form-input:hover {
+    border-color: #c7c2e8;
+}
+
+.edit-customer-form-input:focus {
+    border-color: #421ddb;
+
+    box-shadow:
+        0 0 0 3px rgba(66, 29, 219, 0.08);
+
+    background: #ffffff;
+}
+
+.edit-customer-form-input::placeholder {
+    color: #afb2bd;
+}
+
+.edit-customer-form-input:disabled {
+    background: #f7f7f9;
+    color: #858894;
+    cursor: not-allowed;
+}
+
+.edit-customer-address-input {
+    height: 105px;
+
+    min-height: 105px;
+
+    padding: 11px 12px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+}
+
+
+
+.edit-customer-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding: 13px 24px;
+
+    background: #ffffff;
+    border-top: 1px solid #eceef3;
+
+    flex-shrink: 0;
+}
+
+.edit-customer-cancel,
+.edit-customer-submit {
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 17px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.edit-customer-cancel {
+    border: 1px solid #dfe1e8;
+
+    background: #ffffff;
+    color: #5f6270;
+}
+
+.edit-customer-cancel:hover {
+    background: #f7f7f9;
+    border-color: #d2d4dd;
+    color: #353743;
+}
+
+.edit-customer-submit {
+    border: 1px solid #421ddb;
+
+    background: #421ddb;
+    color: #ffffff;
+
+    box-shadow: 0 2px 5px rgba(66, 29, 219, 0.15);
+}
+
+.edit-customer-submit:hover {
+    background: #3517b5;
+    border-color: #3517b5;
+
+    box-shadow: 0 4px 10px rgba(66, 29, 219, 0.2);
+}
+
+.edit-customer-submit:disabled,
+.edit-customer-cancel:disabled,
+.edit-customer-close:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.edit-customer-submit i {
+    font-size: 13px;
+}
+
+.edit-customer-loading {
+    animation: editCustomerRotate 0.8s linear infinite;
+}
+
+
+
+@keyframes editCustomerOverlayIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes editCustomerPopupIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes editCustomerRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .edit-customer-overlay {
+        padding: 15px;
+    }
+
+    .edit-customer {
+        max-height: calc(100vh - 30px);
+    }
+
+    .edit-customer-top {
+        padding: 16px 20px;
+    }
+
+    .edit-customer-body {
+        padding: 0 20px;
+    }
+
+    .edit-customer-footer {
+        padding: 12px 20px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .edit-customer-overlay {
+        align-items: flex-end;
+
+        padding: 0;
+    }
+
+    .edit-customer {
+        width: 100%;
+        max-width: none;
+        max-height: 92vh;
+
+        border-radius: 16px 16px 0 0;
+
+        animation: editCustomerMobileIn 0.22s ease-out;
+    }
+
+    .edit-customer-top {
+        padding: 15px 18px;
+    }
+
+    .edit-customer-icon-box {
+        width: 38px;
+        height: 38px;
+
+        font-size: 16px;
+    }
+
+    .edit-title-customer h3 {
+        font-size: 16px;
+    }
+
+    .edit-title-customer span {
+        font-size: 11px;
+    }
+
+    .edit-customer-body {
+        padding: 0 18px;
+    }
+
+    .edit-customer-head {
+        padding-top: 18px;
+    }
+
+    .edit-customer-forms-settings {
+        padding-top: 18px;
+    }
+
+    .edit-customer-forms-settings .row {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    .edit-customer-forms-settings .col-lg-6,
+    .edit-customer-forms-settings .col-lg-12,
+    .edit-customer-forms-settings .col-md-6,
+    .edit-customer-forms-settings .col-md-12,
+    .edit-customer-forms-settings .col-sm-12 {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .edit-customer-footer {
+        padding: 13px 18px;
+    }
+}
+
+@keyframes editCustomerMobileIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,430 @@
+
+.agent-login-page {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f4f6f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.agent-login-card {
+    width: 100%;
+    max-width: 1050px;
+    min-height: 620px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.agent-login-left {
+    width: 50%;
+    background-color: #421DDB;
+    padding: 45px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.agent-login-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 21px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+}
+
+.agent-login-brand-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    background-color: rgba(255, 255, 255, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.agent-login-illustration {
+    height: 270px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agent-login-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.agent-login-circle-one {
+    width: 250px;
+    height: 250px;
+}
+
+.agent-login-circle-two {
+    width: 180px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border: none;
+}
+
+.agent-login-main-icon {
+    width: 130px;
+    height: 130px;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+    position: relative;
+    z-index: 2;
+}
+
+.agent-login-floating-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    color: #421DDB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 19px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+}
+
+.agent-login-floating-one {
+    top: 35px;
+    right: 25%;
+}
+
+.agent-login-floating-two {
+    bottom: 25px;
+    left: 20%;
+}
+
+.agent-login-floating-three {
+    top: 100px;
+    right: 12%;
+}
+
+.agent-login-left-content {
+    position: relative;
+    z-index: 2;
+}
+
+.agent-login-left-content h1 {
+    margin: 0 0 14px;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.agent-login-left-content p {
+    margin: 0;
+    max-width: 430px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+
+
+.agent-login-right {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.agent-login-form {
+    width: 100%;
+    max-width: 390px;
+}
+
+.agent-login-form-header {
+    margin-bottom: 38px;
+}
+
+.agent-login-small-title {
+    color: #421DDB;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+.agent-login-form-header h2 {
+    margin: 8px 0 10px;
+    color: #212529;
+    font-size: 30px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.agent-login-form-header p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.agent-login-form-header strong {
+    color: #212529;
+    font-weight: 600;
+}
+
+.agent-login-field {
+    margin-bottom: 25px;
+}
+
+.agent-login-field label,
+.agent-login-otp-section label {
+    display: block;
+    margin-bottom: 9px;
+    color: #343a40;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.agent-login-mobile-input {
+    height: 52px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dee2e6;
+    border-radius: 9px;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.agent-login-mobile-input:focus-within {
+    border-color: #421DDB;
+    box-shadow: 0 0 0 3px rgba(66, 29, 219, 0.1);
+}
+
+.agent-login-country-code {
+    padding: 0 15px;
+    color: #495057;
+    font-size: 14px;
+    font-weight: 600;
+    border-right: 1px solid #dee2e6;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.agent-login-mobile-input input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 14px;
+    font-size: 14px;
+    color: #212529;
+    background-color: transparent;
+    min-width: 0;
+}
+
+.agent-login-mobile-input input::placeholder {
+    color: #adb5bd;
+}
+
+.agent-login-button {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 9px;
+    background-color: #421DDB;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.agent-login-button:hover {
+    background-color: #3516b5;
+}
+
+.agent-login-button:active {
+    transform: scale(0.99);
+}
+
+.agent-login-button i {
+    font-size: 16px;
+}
+
+
+
+.agent-login-otp-section {
+    margin-bottom: 24px;
+}
+
+.agent-login-otp-container {
+    display: flex;
+    gap: 9px;
+}
+
+.agent-login-otp-container input {
+    width: 52px;
+    height: 55px;
+    border: 1px solid #dee2e6;
+    border-radius: 9px;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #212529;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.agent-login-otp-container input:focus {
+    border-color: #421DDB;
+    box-shadow: 0 0 0 3px rgba(66, 29, 219, 0.1);
+}
+
+.agent-login-resend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.agent-login-resend button {
+    border: none;
+    background: none;
+    padding: 0;
+    color: #421DDB;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.agent-login-resend button:hover {
+    text-decoration: underline;
+}
+
+.agent-login-back-button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin-bottom: 22px;
+    color: #6c757d;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.agent-login-back-button:hover {
+    color: #421DDB;
+}
+
+.agent-login-footer-text {
+    margin: 25px 0 0;
+    text-align: center;
+    color: #adb5bd;
+    font-size: 12px;
+}
+
+
+@media (max-width: 900px) {
+    .agent-login-left {
+        padding: 35px;
+    }
+
+    .agent-login-right {
+        padding: 40px;
+    }
+
+    .agent-login-left-content h1 {
+        font-size: 27px;
+    }
+
+    .agent-login-otp-container {
+        gap: 7px;
+    }
+
+    .agent-login-otp-container input {
+        width: 48px;
+    }
+}
+
+@media (max-width: 700px) {
+    .agent-login-page {
+        padding: 20px;
+    }
+
+    .agent-login-card {
+        max-width: 500px;
+        min-height: auto;
+    }
+
+    .agent-login-left {
+        display: none;
+    }
+
+    .agent-login-right {
+        width: 100%;
+        padding: 45px 30px;
+        min-height: 540px;
+    }
+}
+
+@media (max-width: 420px) {
+    .agent-login-page {
+        padding: 12px;
+    }
+
+    .agent-login-card {
+        border-radius: 14px;
+    }
+
+    .agent-login-right {
+        padding: 35px 20px;
+    }
+
+    .agent-login-form-header h2 {
+        font-size: 26px;
+    }
+
+    .agent-login-otp-container {
+        gap: 5px;
+    }
+
+    .agent-login-otp-container input {
+        width: 44px;
+        height: 50px;
+    }
+}

@@ -1,0 +1,209 @@
+.right-setting-top {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.card-form-container {
+    padding: 30px 40px;
+}
+
+.left-header-settings button {
+    color: #474556;
+    background-color: #fff;
+    border: 1px solid #E5EEFF;
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.real-time-staff {
+    padding: 8px 10px;
+}
+
+.card-header-company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header-company-left span {
+    color: #421DDB;
+    font-size: 20px;
+    background-color: #EFF4FF;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.card-header-company-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.heading-form-company h5 {
+    margin-bottom: 0px;
+}
+
+.card-header-company {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E5EEFF;
+    margin-bottom: 20px;
+}
+
+.brand-logo-setting img{
+    width: 40px;
+    height: 40px;
+}
+
+.brand-logo-form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.logo-name-top h4 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.company-logo-header p {
+    color: #474556;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.brand-logo-setting {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px dotted #C8C4D9;
+}
+
+.logo-upload-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-name-top {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.brand-logo-form {
+    border: 1px solid #E5EEFF;
+    background-color: #F8F9FF;
+}
+
+
+.company-tax {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #E5EEFF;
+}
+
+.settings-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* background-color: #F8F9FF; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.company-tax p {
+    margin-bottom: 0px;
+}
+
+.logo-upload {
+    width: 100%;
+}
+
+.logo-upload-label {
+    border: 1px solid #E5EEFF;
+    border-radius: 12px;
+    display: flex;
+    padding: 5px 10px;
+    color: #0B1C30;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    background: #fafbff;
+    transition: 0.2s ease;
+}
+
+.logo-upload-box span {
+    border: 1px solid #E5EEFF;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 10px;
+    background: #fafbff;
+}
+
+.forms-settings{
+    padding: 20px 0px;
+}
+
+.real-time-staff.purple{
+    color: #421DDB;
+    gap: 10px;
+
+    background-color: #FAF5FF;
+    display: flex;
+}
+
+.brand-logo-form.notify{
+    gap: 20px;
+        justify-content: flex-start !important;
+}
+
+.brand-logo-form.notify span{
+    color: #2563EB;
+        -webkit-text-stroke: 1px currentColor;
+}
+
+.notify-bottom h6{
+    color: #172554;
+    font-weight: 700;
+}
+
+.auto-bills{
+    color: #1E3A8ACC;
+    font-size: 15px;
+}
+
+.toggle-icon{
+    color: #5B42F3;
+    font-size: 40px;
+}
+
+.real-time-staff.purple i{
+      -webkit-text-stroke: 0.1px currentColor;
+
+}
+
+.logo-upload-label:hover {
+    border-color: #421ddb;
+    background: #f7f5ff;
+}
+
+.logo-upload-label i {
+    font-size: 28px;
+}
+
+.logo-upload-label span {
+    font-size: 14px;
+   
+    font-weight: 500;
+}

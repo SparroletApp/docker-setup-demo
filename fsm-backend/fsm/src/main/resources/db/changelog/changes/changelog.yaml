@@ -1,0 +1,201 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-user-table
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/create_user_table.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: create-super_admin_table
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/create_super_admin_table.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: create-company-table
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/create_company_table.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_user_add_company_id
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_user_add_company_id.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: create_customer_table
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/create_customer_table.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: create_category_table
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/create_category_table.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_company_add_logo
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_company_add_logo.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: create_parts_table
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/create_parts_table.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_customer_add_pincode
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_customer_add_pincode.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: create_service_type_table
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/create_service_type_table.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: create_ticket_table
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/create_ticket_table.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_user_add_technician_fields
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_user_add_technician_fields.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_user_add_technician_id
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_user_add_technician_id.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: create_job_table
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/create_job_table.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_job_add_job_id
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_job_add_job_id.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_ticket_add_ticket_id
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_ticket_add_ticket_id.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_job_drop_customer_id
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_job_drop_customer_id.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_customer_add_customer_id
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_customer_add_customer_id.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_job_status_columns_add
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_job_status_columns_add.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_user_add_upi_id
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_user_add_upi_id.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: create_invoice_table
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/create_invoice_table.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_ticket_add_company
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_ticket_add_company.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_ticket_add_status
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_ticket_add_status.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: alter_tickets_drop_tax_amount
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_tickets_drop_tax_amount.sql
+            relativeToChangelogFile: true
+
+
+  - changeSet:
+      id: alter_table_company_add_tax
+      author: amrutha
+      changes:
+        - sqlFile:
+            path: sql/alter_table_company_add_tax.sql
+            relativeToChangelogFile: true

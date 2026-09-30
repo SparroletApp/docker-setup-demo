@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: fsm
+
+  datasource:
+    url: jdbc:postgresql://host.docker.internal:5432/fsm_db
+    username: postgres
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+
+jwt:
+  secret: "V7qN2xK9mR4tY8pL6sW3cF1hJ5zD9bG7uA2eX6nP4vQ8"
+
+file:
+  upload-dir: /app/upload
+
+app:
+  base-url: http://localhost:8080

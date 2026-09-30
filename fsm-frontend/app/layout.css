@@ -1,0 +1,33 @@
+.agent-layout {
+  /* display: flex; */
+  width: 100%;
+  /* overflow: hidden; */
+  background-color: #f4f6f9;
+  transition: all 0.3s ease;
+}
+
+
+
+.agent-content {
+  flex: 1;
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar-container.collapsed ~ .agent-content {
+  margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+  .agent-content {
+    margin-left: 0;
+  }
+
+  .content-hidden {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+  .sidebar-container.collapsed ~ .agent-content {
+  margin-left: 0px;
+}
+}

@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "mobile-app",
+    "slug": "mobile-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/user.jpg",
+    "userInterfaceStyle": "light",
+
+    "ios": {
+      "supportsTablet": true
+    },
+
+    "android": {
+      "package": "com.rayloop.technician",
+      "googleServicesFile": "./google-services.json",
+
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/user.jpg",
+        "backgroundImage": "./assets/user.jpg",
+        "monochromeImage": "./assets/user.jpg"
+      },
+
+      "predictiveBackGestureEnabled": false,
+
+      "statusBar": {
+        "backgroundColor": "#421DDB",
+        "barStyle": "light-content",
+        "translucent": false
+      }
+    },
+
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+
+    "plugins": [
+      "expo-router",
+      "expo-notifications",
+      "expo-sharing"
+    ],
+
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0b0915eb-ea61-4694-9eed-ccfb74348dc8"
+      }
+    },
+
+    "owner": "rayloop"
+  }
+}

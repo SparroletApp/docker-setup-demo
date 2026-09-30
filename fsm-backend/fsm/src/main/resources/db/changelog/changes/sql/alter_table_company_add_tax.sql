@@ -1,0 +1,3 @@
+ALTER TABLE company
+    ADD COLUMN tax_enabled BOOLEAN NOT NULL DEFAULT FALSE,
+    ADD COLUMN tax_percentage NUMERIC(5,2);

@@ -1,0 +1,2 @@
+ALTER TABLE users
+    ADD COLUMN technician_id VARCHAR(30) UNIQUE;

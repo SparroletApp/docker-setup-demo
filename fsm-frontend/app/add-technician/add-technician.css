@@ -1,0 +1,677 @@
+.add-technician {
+    width: 100%;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.add-field-top {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 30px;
+    margin-top: auto;
+    background: #ffffff;
+    border-top: 1px solid #e7e9f2;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e8eaf0;
+}
+
+.human-field-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.human-field {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #f1edff;
+    color: #421ddb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    flex-shrink: 0;
+}
+
+.add-title-technician {
+    min-width: 0;
+}
+
+.add-title-technician h3 {
+    margin: 0;
+    color: #252631;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.add-title-technician p {
+    margin: 5px 0 0;
+    color: #858896;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.add-technician-close {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid #e5e7ee;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #6e7180;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.add-technician-close:hover {
+    background: #f7f7fa;
+    color: #252631;
+    border-color: #d9dbe4;
+}
+
+.add-technician-close i {
+    font-size: 14px;
+}
+
+.add-technician-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 30px 10px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #eceef3;
+}
+
+.add-technician-head>span {
+    width: 31px;
+    height: 31px;
+    border-radius: 8px;
+    background: #f1edff;
+    color: #421ddb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.add-technician-head h3 {
+    margin: 0;
+    color: #353743;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+}
+
+.logo-upload-section {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 0 30px 25px;
+    padding: 18px;
+    border: 1px dashed #d9dce6;
+    border-radius: 12px;
+    background: #fafbfe;
+    box-sizing: border-box;
+}
+
+.logo-upload-photo {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: 1px dashed #C8C4D999;
+    background: #E5EEFF;
+    color: #a0a3af;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.logo-upload-photo i {
+    font-size: 21px;
+}
+
+.logo-upload-photo span {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.logo-upload-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.logo-upload-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-upload-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    height: 38px;
+    padding: 0 15px;
+    border-radius: 8px;
+    border: 1px solid #C8C4D966;
+    background: #FFFFFF;
+    color: #0B1C30;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.logo-upload-button i {
+    font-size: 14px;
+}
+
+.logo-upload-remove {
+    height: 38px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    color: #787587;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+.logo-upload-content p {
+    margin: 8px 0 0;
+    color: #9699a6;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+button.form-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    cursor: pointer;
+    color: #646775;
+    font-weight: 600;
+    background: #ffffff;
+}
+
+.forms-settings {
+    padding: 0px 30px;
+}
+
+button.form-input:hover {
+    border-color: #bcb5e9;
+    background: #faf9ff;
+    color: #421ddb;
+}
+
+button.form-input i {
+    font-size: 16px;
+}
+
+button.form-input span {
+    line-height: 1;
+}
+
+.technician-level-option-active {
+    border-color: #421ddb !important;
+    background: #f3f0ff !important;
+    color: #421ddb !important;
+    box-shadow: 0 0 0 2px rgba(66, 29, 219, 0.06);
+}
+
+.forms-settings>.row>.row {
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+
+.forms-settings>.row>.row .form-input {
+    margin-bottom: 0;
+}
+
+.technician-license-field {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.technician-license-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    min-height: 1px;
+}
+
+.technician-license-chip {
+    min-height: 43px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 9px 0 12px;
+    background: #eef3ff;
+    border: 1px solid #dce4f7;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.technician-license-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00a67d;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.technician-license-name {
+    color: #1d2b43;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+
+.technician-license-remove {
+    width: 23px;
+    height: 23px;
+    padding: 0;
+    margin-left: 1px;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    color: #777d8d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.technician-license-remove:hover {
+    background: #dfe5f2;
+    color: #343947;
+}
+
+.technician-license-remove i {
+    font-size: 10px;
+}
+
+.technician-add-license-button {
+    height: 40px;
+    margin-top: 14px;
+    padding: 0 16px;
+    width: 200px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border: 1px dashed #8f7cff;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #421ddb;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.technician-add-license-button:hover {
+    background: #f6f3ff;
+    border-color: #421ddb;
+}
+
+.technician-add-license-button i {
+    font-size: 13px;
+}
+
+.technician-license-input-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 14px;
+    position: relative;
+}
+
+.technician-license-input {
+    width: 100%;
+    height: 43px;
+    padding: 0 43px 0 13px;
+    box-sizing: border-box;
+    border: 1px solid #421ddb;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #30323d;
+    font-size: 13px;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 0 3px rgba(66, 29, 219, 0.08);
+}
+
+.technician-license-input:hover {
+    border-color: #421ddb;
+}
+
+.technician-license-input:focus {
+    border-color: #421ddb;
+    box-shadow: 0 0 0 3px rgba(66, 29, 219, 0.08);
+}
+
+.technician-license-input::placeholder {
+    color: #aeb1bc;
+}
+
+.technician-license-input-close {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: #777d8d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.technician-license-input-close:hover {
+    background: #f0f1f5;
+    color: #343947;
+}
+
+.technician-license-input-close i {
+    font-size: 11px;
+}
+
+.add-technician-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    position: sticky;
+    bottom: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 30px;
+    margin-top: auto;
+    background: #ffffff;
+    border-top: 1px solid #e7e9f2;
+    flex-shrink: 0;
+    margin-top: 8px;
+    padding: 12px 30px;
+    border-top: 1px solid #e8eaf0;
+    background: #ffffff;
+}
+
+.add-technician-cancel {
+    height: 35px;
+    padding: 0 19px;
+    border: 1px solid #dfe1e8;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #5f6270;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.add-technician-cancel:hover {
+    background: #f7f7f9;
+    border-color: #d2d4dd;
+    color: #353743;
+}
+
+.add-technician-submit {
+    height: 35px;
+    padding: 0 19px;
+    border: 1px solid #421ddb;
+    border-radius: 8px;
+    background: #421ddb;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.add-technician-submit:hover {
+    background: #3517b5;
+    border-color: #3517b5;
+}
+
+.add-technician-submit i {
+    font-size: 14px;
+}
+
+.add-technician button {
+    font-family: inherit;
+}
+
+.add-technician input[type="file"] {
+    display: none;
+}
+
+.add-technician::-webkit-scrollbar {
+    width: 6px;
+}
+
+.add-technician::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.add-technician::-webkit-scrollbar-thumb {
+    background: #d8dae2;
+    border-radius: 10px;
+}
+
+.add-technician::-webkit-scrollbar-thumb:hover {
+    background: #c5c8d2;
+}
+
+@media (max-width: 768px) {
+    .add-field-top {
+        padding: 20px;
+    }
+
+    .add-technician-head {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .forms-settings {
+        padding: 0 20px;
+    }
+
+    .logo-upload-section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .add-technician-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .add-title-technician h3 {
+        font-size: 18px;
+    }
+
+    .add-title-technician p {
+        font-size: 12px;
+    }
+
+    .technician-license-input-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .add-field-top {
+        align-items: flex-start;
+        padding: 18px;
+    }
+
+    .human-field-top {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .human-field {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    .add-title-technician h3 {
+        font-size: 16px;
+    }
+
+    .add-title-technician p {
+        max-width: 230px;
+        font-size: 11px;
+    }
+
+    .add-technician-close {
+        width: 34px;
+        height: 34px;
+    }
+
+    .add-technician-head {
+        margin: 22px 18px 18px;
+    }
+
+    .add-technician-head>span {
+        width: 29px;
+        height: 29px;
+    }
+
+    .add-technician-head h3 {
+        font-size: 11px;
+    }
+
+    .logo-upload-section {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 18px;
+        margin-right: 18px;
+        padding: 15px;
+    }
+
+    .logo-upload-content {
+        width: 100%;
+    }
+
+    .logo-upload-actions {
+        flex-wrap: wrap;
+    }
+
+    .forms-settings {
+        padding: 0 18px;
+    }
+
+    .forms-settings .col-lg-6,
+    .forms-settings .col-lg-12,
+    .forms-settings .col-md-6,
+    .forms-settings .col-md-12,
+    .forms-settings .col-sm-12 {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .forms-settings .row {
+        margin-left: -7px;
+        margin-right: -7px;
+    }
+
+    .input-label {
+        margin-bottom: 15px;
+    }
+
+    .form-input {
+        height: 42px;
+    }
+
+    .technician-license-list {
+        gap: 8px;
+    }
+
+    .technician-license-chip {
+        max-width: 100%;
+    }
+
+    .technician-license-name {
+        max-width: 180px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .technician-add-license-button {
+        margin-top: 12px;
+    }
+
+    .technician-license-input-wrapper {
+        max-width: 100%;
+    }
+
+    .technician-license-input {
+        height: 42px;
+    }
+
+    .add-technician-footer {
+        padding: 16px 18px;
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .add-technician-cancel,
+    .add-technician-submit {
+        width: 100%;
+    }
+}

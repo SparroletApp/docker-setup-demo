@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "12061243865",
+    "project_id": "technician-app-ed93f",
+    "storage_bucket": "technician-app-ed93f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12061243865:android:19f6fc37815e0b0f9341c8",
+        "android_client_info": {
+          "package_name": "com.rayloop.technician"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1p0PepZmR0sEh6TYHSPL_yNdVVrZKAcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
